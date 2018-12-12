@@ -37,15 +37,6 @@ spec:
                 }
             }
         }
-        stage('Deliver') {
-            when {
-                branch 'master'
-            }
-            steps {
-                container('maven') {
-                    sh './scripts/deliver.sh'
-                }
-            }
-        }
+        
     }
 }
