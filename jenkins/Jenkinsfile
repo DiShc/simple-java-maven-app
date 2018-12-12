@@ -29,6 +29,7 @@ spec:
                     sh 'mvn test'
                 }
             }
+            input 'Do you want to proceed'
             post {
                 always {
                     container('maven') {
